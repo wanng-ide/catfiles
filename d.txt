@@ -1,0 +1,3 @@
+In d.txt now.
+Hello,
+This is a test.
