@@ -57,7 +57,7 @@ int main(int argc, char *argv[]){
                 ptr = buffer;
                 while(bytes_write = write(out, ptr, bytes_read)){
                     // may have an error
-                    if ((bytes_write = -1) && (errno != EINTR)){
+                    if ((bytes_write == -1) && (errno != EINTR)){
                         break;
                     // write all bytes -> break
                     }else if(bytes_write == bytes_read){
